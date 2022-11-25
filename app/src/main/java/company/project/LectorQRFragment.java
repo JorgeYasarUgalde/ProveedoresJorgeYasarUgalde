@@ -92,7 +92,9 @@ public class LectorQRFragment extends Fragment {
 
         qr = root.findViewById(R.id.qr);
 
+        //SharedPreferences sharedPref = getActivity().getSharedPreferences("application", getContext().MODE_PRIVATE);
 
+        //Proveedor = sharedPref.getString("SelectedProveedores", "");
 
         SharedPreferences sharedPreferences = PreferenceManager
                 .getDefaultSharedPreferences(getContext());

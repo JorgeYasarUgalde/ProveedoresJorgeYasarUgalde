@@ -63,9 +63,9 @@ public class SensorCamaraFragment extends Fragment {
 
     private FirebaseAuth mAuth;
 
-
+    // Define the pic id
     private static final int pic_id = 123;
-
+    // Define the button and imageview type variable
     Button camera_open_id;
     Button save_camera_id;
     ImageView click_image_id;
@@ -86,18 +86,18 @@ public class SensorCamaraFragment extends Fragment {
         storage = FirebaseStorage.getInstance();
         storageRef = storage.getReference();
 
-
+        // By ID we can get each component which id is assigned in XML file get Buttons and imageview.
         camera_open_id = root.findViewById(R.id.camera_button);
         click_image_id = root.findViewById(R.id.click_image);
         click_image_id.setBackgroundColor(getResources().getColor(R.color.gray));
 
         save_camera_id = root.findViewById(R.id.camera_save);
 
-
+        // Camera_open button is for open the camera and add the setOnClickListener in this button
         camera_open_id.setOnClickListener(v -> {
-
+            // Create the camera_intent ACTION_IMAGE_CAPTURE it will open the camera for capture the image
             Intent camera_intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-
+            // Start the activity with camera_intent, and request pic id
             startActivityForResult(camera_intent, pic_id);
         });
 
