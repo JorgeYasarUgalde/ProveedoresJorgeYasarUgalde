@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarProveedorFragment">
+
+    <TextView
+        android:id="@+id/tv_proveedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proveedor"
+        android:textSize="25sp"
+        android:layout_marginStart="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nombre"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:layout_below="@+id/tv_proveedor"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Descripcion"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:layout_below="@+id/et_name"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_contacto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Telefono o correo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:layout_below="@id/et_descripcion"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_articulos"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Articulos"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_contacto"
+        android:textSize="15sp" />
+
+
+    <EditText
+        android:id="@+id/et_precio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Precio"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:layout_below="@id/et_articulos"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_guardar_proveedor"
+        android:layout_width="371dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/et_precio"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Guardar" />
+
+
+</RelativeLayout>

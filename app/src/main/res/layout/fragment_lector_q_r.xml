@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LectorQRFragment">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_prov_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proveedor : "
+            android:textSize="32sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentTop="true"/>
+
+
+        <TextView
+            android:id="@+id/tv_prov_descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripcion : "
+            android:textSize="18sp"
+            android:layout_below="@id/tv_prov_name"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="32dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_prov_contacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacto : "
+            android:textSize="18sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="32dp"
+            android:layout_below="@id/tv_prov_descripcion"/>
+
+        <TextView
+            android:id="@+id/tv_prov_articulos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Articulos : "
+            android:textSize="18sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="32dp"
+            android:layout_below="@id/tv_prov_contacto"/>
+
+
+        <TextView
+            android:id="@+id/tv_prov_precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacto : "
+            android:textSize="18sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="32dp"
+            android:layout_below="@id/tv_prov_articulos"/>
+
+        <Button
+            android:id="@+id/qr"
+            android:layout_width="371dp"
+            android:layout_height="62dp"
+            android:layout_below="@id/tv_prov_precio"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Codigo QR" />
+
+        <Button
+            android:id="@+id/btn_prov_editar"
+            android:layout_width="371dp"
+            android:layout_height="62dp"
+            android:layout_below="@id/qr"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:text="Editar"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/btn_prov_eliminar"
+            android:layout_width="371dp"
+            android:layout_height="62dp"
+            android:layout_below="@id/btn_prov_editar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:text="Eliminar"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
